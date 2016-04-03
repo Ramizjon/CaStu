@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <fragment
+        android:id="@+id/select_from_map_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        class="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.85"
+        android:visibility="visible"
+        android:text="Выберите местоположение"
+        android:background="#E66E6E"
+        android:id="@+id/approveLocationButton"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

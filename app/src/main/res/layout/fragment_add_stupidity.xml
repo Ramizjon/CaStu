@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.AddStupidityFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:fillViewport="true"
+        android:id="@+id/scrollView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:fillViewport="true">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:id="@+id/cameraImageView"
+            android:background="@drawable/no_image"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:text="Загрузить фото"
+            android:id="@+id/addPhotoButton"
+            android:background="#10CC8A"
+            android:layout_gravity="center_horizontal"/>
+
+            <GridLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:rowCount="5"
+                android:columnCount="3">
+
+                <CheckBox
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/checkBox1"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/custom_check_1"/>
+
+                <CheckBox
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/checkBox2"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/custom_check_2"/>
+
+                <CheckBox
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/checkBox3"
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/custom_check_3"/>
+
+                <CheckBox
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/checkBox4"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/custom_check_4"/>
+
+                <CheckBox
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/checkBox5"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/custom_check_5"
+                    />
+
+                <CheckBox
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/checkBox6"
+                    android:layout_row="2"
+                    android:layout_column="2"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/custom_check_6"/>
+
+                <CheckBox
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/checkBox7"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/custom_check_7"/>
+
+                <CheckBox
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/checkBox8"
+                    android:layout_row="3"
+                    android:layout_column="1"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/custom_check_8"/>
+
+                <CheckBox
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/checkBox9"
+                    android:layout_row="3"
+                    android:layout_column="2"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/custom_check_9"/>
+
+                    <RadioButton
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:layout_row="4"
+                        android:layout_column="0"
+                        android:id="@+id/radiobutton1"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/custom_radio_1"/>
+                    <RadioButton
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:layout_row="4"
+                        android:layout_column="1"
+                        android:id="@+id/radiobutton2"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/custom_radio_2"/>
+                    <RadioButton
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:layout_row="4"
+                        android:layout_column="2"
+                        android:id="@+id/radiobutton3"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/custom_radio_3"/>
+            </GridLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="155dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:visibility="visible"
+                android:text="Выбрать местоположение"
+                android:background="#10CC8A"
+                android:id="@+id/selectLocationButton"
+                android:layout_gravity="center_horizontal"/>
+
+            <Button
+                android:layout_width="155dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:visibility="visible"
+                android:text="Текущее местоположение"
+                android:background="#10CC8A"
+                android:id="@+id/addCurrentLocationButton"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:text="Ваш комментарий: "
+            android:id="@+id/textView" />
+
+        <EditText
+            android:layout_width="340dp"
+            android:layout_height="100dp"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:id="@+id/editText"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/custom_edit_text"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:visibility="visible"
+            android:text="Поделиться тупизмом"
+            android:background="#E66E6E"
+            android:id="@+id/shareStupidityButton"
+            android:layout_gravity="center_horizontal"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="100dp" />
+
+       </LinearLayout>
+    </ScrollView>
